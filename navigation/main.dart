@@ -24,14 +24,12 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   /*
-hey everyone , today iam going to show you how to navigation between 2 screen 
-also how can you pass data to next screen
-and how to return data from 2nd screen to first
-so let's start
-by screen 2nd screen
-now add a button to 
+Hey evryone let's see how to navigate between screen
+i have already created UI 
 
   */
+
+  final TextEditingController _editingController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,32 +40,37 @@ now add a button to
           ),
         ),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          //  that's it you can open new screen with Navigator
-          //  now let's screen a button in second screen to show how to close screen
+      body: SizedBox(
+        height: double.infinity,
+        width: double.infinity,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Container(
+              margin: const EdgeInsets.all(20),
+              child: TextField(
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  hintText: "Enter Message",
+                ),
+                controller: _editingController,
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                String message = _editingController.text.trim();
+                //  let's see how to open next screen
+                //  now how to pass data from one screen to next
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => SecondScreen(name: message)));
+                    //  that's how you move to next screen
 
-          ElevatedButton(
-              onPressed: () async {
-                //  here i am passing name in parameter to second screen
-                //  you can pass any data type you want in same manner
-                //  that's it this is how to pass data from first to second screen
-                //  now let's see how you can return data from second screen to first
-
-                var res = await Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => const SecondScreen(
-                          name: "Aniket",
-                        )));
-//  i am printing data returnig from second screen
-//  that's it for now 
-//  thanks for watching
-
-                print(res);
               },
-              child: const Text("next screen")),
-        ],
+              child: const Text("next screen"),
+            ),
+          ],
+        ),
       ),
     );
   }
