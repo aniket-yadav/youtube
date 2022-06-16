@@ -10,24 +10,26 @@ class SecondScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Second Screen"),
       ),
-      body: Column(
-        children: [
-          Text("name from first screen $name"),
-          Container(
-            child: const Text("I am second screen"),
-          ),
-          ElevatedButton(
+      body: SizedBox(
+        height: double.infinity,
+        width: double.infinity,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text("Message from Home Screen:- $name"),
+            const SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
               onPressed: () {
-                Navigator.of(context).pop(
-                    "hi from second screen"); // you can return any data , by just puting it in pop
-                // pop will remove this screen from stack
-                //  Flutter screen are stack based  that is one above other
-                //  when you push a screen it comes on top of current screen
-                //  and by poping this new screen you will be back on first one
-                //  now let's see how you can pass value from first screen to second
+                //  now let's see how to close this screen
+                Navigator.of(context).pop();
               },
-              child: const Text("Close screen")),
-        ],
+              child: const Text("Close screen"),
+            ),
+          ],
+        ),
       ),
     );
   }
