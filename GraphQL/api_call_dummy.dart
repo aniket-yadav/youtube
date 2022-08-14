@@ -1,3 +1,7 @@
+// NOTE:
+//  here authorization and key field is to just show how you can use.
+//  actual api link used here does not support authorization key and api key 
+
 void fetchData() async {
     setState(() {
       _loading = true; 
