@@ -1,4 +1,14 @@
+/*
+TO BUILD RUN
+
+flutter  pub run build_runner build
+
+
+*/
+
+
 //  you can create by any name you want here my  data is list of characters
+
 // so characters name is more suitable
 
 // as  is said start from inner
