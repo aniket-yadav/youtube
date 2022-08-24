@@ -1,3 +1,15 @@
+/*
+  http: ^0.13.4
+  graphql_flutter: ^5.1.0
+  json_serializable: ^6.3.1 
+  json_annotation: ^4.6.0 
+
+dev_dependencies:  
+  build_runner: ^2.2.0 
+
+
+*/
+
 import 'package:dummy/characters.dart';
 import 'package:flutter/material.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
