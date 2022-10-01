@@ -1,3 +1,30 @@
+/*  add plugin
+  url_launcher: ^6.1.6
+  
+  AndroidManifest.xml
+  
+  <queries>
+        <!-- If your app opens https URLs -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
+        <!-- If your app makes calls -->
+        <intent>
+            <action android:name="android.intent.action.DIAL" />
+            <data android:scheme="tel" />
+        </intent>
+        <!-- If your app emails -->
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+            <data android:mimeType="*/*" />
+        </intent>
+    </queries>
+
+  
+*/ 
+
+
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
