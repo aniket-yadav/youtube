@@ -1,3 +1,14 @@
+/*
+add this plugins
+  another_transformer_page_view: ^2.0.0 # this is for pageview
+  http: ^0.13.5 # api call
+  intl: ^0.17.0 # data formatting
+
+
+
+*/
+
+
 import 'dart:convert';
 
 import 'package:another_transformer_page_view/another_transformer_page_view.dart';
