@@ -1,3 +1,12 @@
+/*
+
+story_view: ^0.14.0 # add this plugin
+
+https://pub.dev/packages/story_view
+
+*/
+
+
 import 'package:flutter/material.dart';
 import 'package:flutterdemo/story_screen.dart';
 import 'package:story_view/story_view.dart';
