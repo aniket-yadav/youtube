@@ -1,3 +1,10 @@
+/*
+Add plugin to pubspec.yaml
+  get: ^4.6.5
+
+
+*/
+
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:gexnavigation/screen_one.dart';
@@ -11,6 +18,7 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
 /*
+
 Hey everyone , Today we will how to use Get navigation 
 doing navigation with Get plugin is very easy to let's let started
 with installing plugin
