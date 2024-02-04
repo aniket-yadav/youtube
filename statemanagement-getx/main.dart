@@ -1,3 +1,11 @@
+/*
+  plugins
+  http: ^1.1.0
+  shimmer: ^3.0.0
+  get: ^4.6.6
+*/
+
+
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:get/instance_manager.dart';
