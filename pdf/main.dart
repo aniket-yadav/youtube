@@ -1,3 +1,19 @@
+/*
+
+  pdf: ^3.10.7  # for pdf
+  open_filex: ^4.4.0 # to open file 
+  path_provider: ^2.1.2 # it's to get directory /folder for storing
+  path: ^1.8.3 # this is for path joining
+  printing: ^5.11.1 # this give customization thing for pdf
+
+
+// create a folder in root assets and and image logo.png
+
+
+*/
+
+
+
 import 'dart:io';
 
 import 'package:flutter/material.dart';
