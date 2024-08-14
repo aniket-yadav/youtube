@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-//https://api.slingacademy.com/public/sample-photos/$index.jpeg
 void main() {
   runApp(const MyApp());
 }
@@ -30,15 +29,7 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  /*
- Hey Everyone , Today we are going to see new widget added in flutter vrsion 3.24 
- i.e. CarouselView
- earlier we had to use external plugin for it 
- but fromnow on we don't need that
- so i have already created code and everything so let's see it
-
-  */
+class _MyHomePageState extends State<MyHomePage> {  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -77,8 +68,6 @@ class _MyHomePageState extends State<MyHomePage> {
         ],
       ),
     );
-    // let's see this code in action
-    // That's it for today thanks for watching ,
   }
 
   void _showImageDialog(BuildContext context, String imageUrl) {
