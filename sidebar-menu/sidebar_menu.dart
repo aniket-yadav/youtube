@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:testhero/search.dart';
 
 class SidebarMenu extends StatefulWidget {
   const SidebarMenu({super.key});
@@ -40,9 +41,16 @@ class _SidebarMenuState extends State<SidebarMenu> {
             leading: Icon(Icons.home),
             title: Text("Home"),
           ),
-          const ListTile(
-            leading: Icon(Icons.search),
-            title: Text("Search"),
+          InkWell(
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (_) => const Search()));
+            },
+            child: const ListTile(
+              leading: Icon(Icons.search),
+              title: Text("Search"),
+            ),
           ),
           const ListTile(
             leading: Icon(Icons.share),
@@ -63,9 +71,10 @@ class _SidebarMenuState extends State<SidebarMenu> {
               color: Colors.redAccent,
             ),
             title: Text("Logout"),
-          ),
+          )
+          
         ],
       ),
-    );
+    ); 
   }
 }
